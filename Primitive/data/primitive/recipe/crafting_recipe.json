@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " ll",
+    " ls"
+  ],
+  "key": {
+    "l": [
+      "minecraft:leather"
+    ],
+    "s": [
+      "minecraft:string"
+    ]
+  },
+  "result": {
+    "id": "minecraft:carrot_on_a_stick",
+    "components": {
+      "minecraft:custom_name": {
+        "text": "Water skin",
+        "italic": false
+      },
+      "minecraft:custom_data": "{water_skin:1}"
+    }
+  }
+}

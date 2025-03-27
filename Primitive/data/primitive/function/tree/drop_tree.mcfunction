@@ -1,0 +1,11 @@
+$execute if block ~ ~ ~ minecraft:stripped_oak_log run summon item ~ ~1 ~ {Item:{id:oak_sapling,count:1,components:{custom_data:{burn_time:$(burn_time),tree_size:$(size)},custom_name:["",{"text":"Oak stem: $(size)","italic":false}]}}}
+$execute if block ~ ~ ~ minecraft:stripped_spruce_log run summon item ~ ~1 ~ {Item:{id:spruce_sapling,count:1,components:{custom_data:{burn_time:$(burn_time),tree_size:$(size)},custom_name:["",{"text":"Spruce stem: $(size)","italic":false}]}}}
+$execute if block ~ ~ ~ minecraft:stripped_birch_log run summon item ~ ~1 ~ {Item:{id:birch_sapling,count:1,components:{custom_data:{burn_time:$(burn_time),tree_size:$(size)},custom_name:["",{"text":"Birch stem: $(size)","italic":false}]}}}
+$execute if block ~ ~ ~ minecraft:stripped_jungle_log run summon item ~ ~1 ~ {Item:{id:jungle_sapling,count:1,components:{custom_data:{burn_time:$(burn_time),tree_size:$(size)},custom_name:["",{"text":"Jungle stem: $(size)","italic":false}]}}}
+$execute if block ~ ~ ~ minecraft:stripped_acacia_log run summon item ~ ~1 ~ {Item:{id:acacia_sapling,count:1,components:{custom_data:{burn_time:$(burn_time),tree_size:$(size)},custom_name:["",{"text":"Acacia stem: $(size)","italic":false}]}}}
+$execute if block ~ ~ ~ minecraft:stripped_dark_oak_log run summon item ~ ~1 ~ {Item:{id:dark_oak_sapling,count:1,components:{custom_data:{burn_time:$(burn_time),tree_size:$(size)},custom_name:["",{"text":"Dark oak stem: $(size)","italic":false}]}}}
+$execute if block ~ ~ ~ minecraft:stripped_mangrove_log run summon item ~ ~1 ~ {Item:{id:mangrove_sapling,count:1,components:{custom_data:{burn_time:$(burn_time),tree_size:$(size)},custom_name:["",{"text":"Mangrove_stem: $(size)","italic":false}]}}}
+$execute if block ~ ~ ~ minecraft:stripped_cherry_log run summon item ~ ~1 ~ {Item:{id:cherry_sapling,count:1,components:{custom_data:{burn_time:$(burn_time),tree_size:$(size)},custom_name:["",{"text":"Cherry stem: $(size)","italic":false}]}}}
+$execute if block ~ ~ ~ minecraft:stripped_pale_oak_log run summon item ~ ~1 ~ {Item:{id:pale_oak_sapling,count:1,components:{custom_data:{burn_time:$(burn_time),tree_size:$(size)},custom_name:["",{"text":"Pale oak stem: $(size)","italic":false}]}}}
+
+

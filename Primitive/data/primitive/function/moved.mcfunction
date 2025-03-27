@@ -1,0 +1,1 @@
+scoreboard players set @s fire_counter 0
