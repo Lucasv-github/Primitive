@@ -49,6 +49,10 @@ execute as @s[scores={cook_time=400..}] run function primitive:fire/cooked
 execute as @s[nbt={Item:{id:"minecraft:wheat_seeds"}}] run function primitive:modify/wheat_seeds
 execute as @s[nbt={Item:{id:"minecraft:flint"}}] run function primitive:modify/flint
 
+execute as @e[nbt={Item:{id:"minecraft:clay_ball"}}] unless data entity @s Item.components.minecraft:custom_data.clay run function primitive:broken/clay
+execute as @s[nbt={Item:{id:"minecraft:clay"}}] run function primitive:broken/clay
+
+execute as @s[nbt={Item:{id:"minecraft:sand"}}] run function primitive:broken/sand
 execute as @s[nbt={Item:{id:"minecraft:gravel"}}] run function primitive:broken/gravel
 execute as @s[nbt={Item:{id:"minecraft:dirt"}}] run function primitive:broken/dirt
 execute as @s[nbt={Item:{id:"minecraft:grass_block"}}] run function primitive:broken/grass_block

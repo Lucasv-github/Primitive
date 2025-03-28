@@ -15,6 +15,7 @@ scoreboard players remove @a[scores={fire_counter=1..}] fire_counter 1
 
 execute as @e[type=minecraft:cow,tag=!modified_cow] run function primitive:modify/cow
 execute as @e[type=minecraft:pig,tag=!modified_pig] run function primitive:modify/pig
+execute as @e[type=minecraft:sheep,tag=!modified_sheep] run function primitive:modify/sheep
 
 execute as @e[tag=mob_ai] run function primitive:check_dispose_ai
 
