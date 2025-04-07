@@ -16,7 +16,7 @@
     "id": "minecraft:carrot_on_a_stick",
     "components": {
       "minecraft:custom_name": {
-        "text": "Water skin",
+        "text": "Waterskin",
         "italic": false
       },
       "minecraft:custom_data": "{waterskin:1,filled:0}",

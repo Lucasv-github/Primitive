@@ -2,5 +2,13 @@
   "pack": {
     "pack_format": 61,
     "description": "Primitive minecraft datapack by lprogrammer"
+  },
+  "filter": {
+    "block": [
+      {
+        "namespace": "^minecraft$",
+        "path": "^recipe/.*"
+      }
+    ]
   }
 }
