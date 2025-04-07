@@ -1,0 +1,1 @@
+$execute unless score 0 reg_1 matches $(salt) run summon item ~ ~ ~ {Item:{id:sugar,count:$(salt),components:{custom_name:[{"text":"Salt","italic":false}],custom_data:{salt:1}}}}

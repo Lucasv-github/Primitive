@@ -1,0 +1,1 @@
+execute at @s run data merge entity @e[limit=1,sort=nearest,type=minecraft:interaction,distance=..1] {width:0.1,height:0.1,Tags:["clay_blob_interaction"]} 
