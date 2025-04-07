@@ -1,2 +1,0 @@
-execute at @s run summon cow ~ ~ ~ {Tags:["modified_cow"],Passengers:[{id:zombie,PersistenceRequired:1b,Silent:1b,Invulnerable:1b,Tags:["mob_ai"],active_effects:[{id:invisibility,duration:1000000,show_particles:0b}]}]}
-tp @s ~ -1000 ~
