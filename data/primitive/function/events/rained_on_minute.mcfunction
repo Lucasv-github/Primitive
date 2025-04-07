@@ -1,0 +1,1 @@
+execute as @s[tag=fired_pot] run function primitive:pot/rain_fill
