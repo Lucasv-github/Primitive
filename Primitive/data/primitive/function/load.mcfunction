@@ -1,5 +1,7 @@
 scoreboard objectives add reg_1 dummy
 scoreboard objectives add reg_2 dummy
+scoreboard objectives add reg_3 dummy
+scoreboard objectives add reg_4 dummy
 
 scoreboard objectives add tick_counter dummy
 scoreboard objectives add second_counter dummy
@@ -29,6 +31,8 @@ scoreboard objectives add break_counter dummy
 scoreboard objectives add tree_count dummy
 scoreboard objectives add total_tree_count dummy
 
+scoreboard objectives add max_thirst dummy
+scoreboard objectives add minute_thirst dummy
 scoreboard objectives add thirst dummy
 
 scoreboard players set 0 reg_1 0
@@ -39,12 +43,17 @@ scoreboard players set 4 reg_1 4
 scoreboard players set 5 reg_1 5
 scoreboard players set 20 reg_1 20
 scoreboard players set 60 reg_1 60
+scoreboard players set 80 reg_1 80
 scoreboard players set 100 reg_1 100
 scoreboard players set 200 reg_1 200
 scoreboard players set 1000 reg_1 1000
 scoreboard players set 1600 reg_1 1600
 
+#Settings
 difficulty hard
 gamerule playersSleepingPercentage 101
+
+scoreboard players set primitive_settings max_thirst 10000
+scoreboard players set primitive_settings minute_thirst 300
 
 tellraw @a {text:"Primitive 1.21.5-0 loaded","bold":true,"color":"dark_green"}
