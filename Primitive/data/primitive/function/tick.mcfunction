@@ -7,7 +7,7 @@ execute as @e[type=minecraft:cow,tag=!modified_cow] run function primitive:modif
 execute as @e[type=minecraft:pig,tag=!modified_pig] run function primitive:modify/pig
 execute as @e[type=minecraft:sheep,tag=!modified_sheep] run function primitive:modify/sheep
 
-execute as @e[type=minecraft:armor_stand,tag=placed_clay_blob] run function primitive:pot/create_blob
+execute as @e[type=minecraft:armor_stand,tag=placed_clay_blob] run function primitive:pot/place_blob
 execute as @e[type=minecraft:armor_stand,tag=placed_fired_pot] run function primitive:pot/place
 
 execute as @e[type=minecraft:interaction,tag=clay_blob_interaction] if data entity @s attack run function primitive:pot/clay_punch
