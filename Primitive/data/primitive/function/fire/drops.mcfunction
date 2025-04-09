@@ -1,2 +1,2 @@
-$summon item ~ ~ ~ {Item:{id:charcoal,count:$(coal),components:{custom_data:{burn_time:1000,hot:1}}}}
-$summon item ~ ~ ~ {Item:{id:gray_dye,count:$(coal),components:{custom_name:{"text":"Ash","italic":false},custom_data:{ash:1,hot:1}}}}
+$summon item ~ ~ ~ {Item:{id:charcoal,count:$(coal),components:{item_model:"primitive_pack:hot_charcoal",custom_data:{burn_time:1000,hot:1,temperature:500}}}}
+$summon item ~ ~ ~ {Item:{id:gray_dye,count:$(coal),components:{custom_name:{"text":"Ash","italic":false},custom_data:{ash:1,hot:1,temperature:500}}}}
