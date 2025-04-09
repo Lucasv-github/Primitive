@@ -1,0 +1,1 @@
+$data modify storage primitive:current_held_temp components set from storage primitive:current_held_$(id)

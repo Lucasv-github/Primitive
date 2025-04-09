@@ -19,6 +19,9 @@ execute if predicate {condition:"entity_properties",entity:"this",predicate:{typ
 execute if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{backward:true}}}} run function primitive:moved
 execute if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{right:true}}}} run function primitive:moved
 
+#Placed item data
+execute store result score @s reg_1 run data get entity @s SelectedItemSlot
+execute unless score @s reg_1 = @s selected_item_slot run function primitive:player/changed_slot
 
 #Allowing block breaks
 tag @s remove looking_water

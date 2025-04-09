@@ -3,6 +3,9 @@ scoreboard objectives add reg_2 dummy
 scoreboard objectives add reg_3 dummy
 scoreboard objectives add reg_4 dummy
 
+scoreboard objectives add player_id dummy
+scoreboard objectives add selected_item_slot dummy
+
 scoreboard objectives add tick_counter dummy
 scoreboard objectives add second_counter dummy
 
@@ -48,6 +51,8 @@ scoreboard players set 100 reg_1 100
 scoreboard players set 200 reg_1 200
 scoreboard players set 1000 reg_1 1000
 scoreboard players set 1600 reg_1 1600
+
+scoreboard objectives setdisplay list player_id
 
 #Settings
 difficulty hard
