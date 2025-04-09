@@ -1,3 +1,3 @@
-scoreboard players set @s thirst 20
+scoreboard players operation @s thirst = primitive_settings max_thirst
 
 tag @s add joined_before
