@@ -9,11 +9,11 @@ execute at @s as @p run function primitive:held/get_data
 execute at @s store result score @n[type=minecraft:armor_stand,tag=fired_pot,distance=..1] pot_water_amount run data get storage primitive:current_held_temp components.components.components.minecraft:custom_data.pot_water_amount
 execute at @s store result score @n[type=minecraft:armor_stand,tag=fired_pot,distance=..1] pot_salt_amount run data get storage primitive:current_held_temp components.components.components.minecraft:custom_data.pot_salt_amount
 
-execute at @s store result score Temp reg_1 run data get storage primitive:current_held_temp components.components.components.minecraft:custom_data.pot_water_amount.raw_water
-execute if score Temp reg_1 matches 1 run tag @s add raw_water
+execute at @s store result score Temp reg_1 run data get storage primitive:current_held_temp components.components.components.minecraft:custom_data.raw_water
+execute at @s if score Temp reg_1 matches 1 run tag @n[type=minecraft:armor_stand,tag=fired_pot,distance=..1] add raw_water
 
-execute at @s store result score Temp reg_1 run data get storage primitive:current_held_temp components.components.components.minecraft:custom_data.pot_water_amount.salt_water
-execute if score Temp reg_1 matches 1 run tag @s add salt_water
+execute at @s store result score Temp reg_1 run data get storage primitive:current_held_temp components.components.components.minecraft:custom_data.salt_water
+execute at @s if score Temp reg_1 matches 1 run tag @n[type=minecraft:armor_stand,tag=fired_pot,distance=..1] add salt_water
 
 execute at @s as @e[limit=1,sort=nearest,type=armor_stand,tag=fired_pot] if block ~ ~1 ~ minecraft:water run function primitive:pot/placed_in_water
 
