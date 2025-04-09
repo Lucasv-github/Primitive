@@ -29,8 +29,12 @@ tag @s remove looking_pot
 execute at @s[gamemode=!creative,gamemode=!spectator] anchored eyes positioned ^ ^ ^ anchored feet run function primitive:look_ray
 
 
-#Waterskin
+#Waterskin use
 execute as @s[scores={click_detect=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{waterskin:1}}}}] run function primitive:waterskin/click
+
+#Fire drill use
+execute as @s[scores={click_detect=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{fire_drill:1}}}}] run function primitive:fire/drill_use
+
 
 scoreboard players set @s sneak_detect 0
 scoreboard players set @s click_detect 0
