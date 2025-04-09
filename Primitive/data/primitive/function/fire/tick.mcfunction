@@ -16,6 +16,7 @@ execute if score @s fire_time matches ..0 at @s run setblock ~ ~ ~ minecraft:air
 execute if score @s fire_time matches ..0 run scoreboard players operation @s total_fire_time /= 1600 reg_1
 execute if score @s fire_time matches ..0 store result storage primitive:fire_drops coal int 1 run scoreboard players get @s total_fire_time
 execute if score @s fire_time matches ..0 at @s run function primitive:fire/drops with storage primitive:fire_drops
+execute if score @s fire_time matches ..0 at @s run data remove storage primitive:fire_drops coal
 execute if score @s fire_time matches ..0 at @s run tag @e[distance=..2] remove heated
 execute if score @s fire_time matches ..0 run kill @s
 

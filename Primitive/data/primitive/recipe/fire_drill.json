@@ -1,25 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " ll",
-    " ls"
+    " st",
+    " tt"
   ],
   "key": {
-    "l": [
-      "minecraft:leather"
-    ],
     "s": [
       "minecraft:string"
+    ],
+    "t": [
+      "minecraft:stick"
     ]
   },
   "result": {
     "id": "minecraft:carrot_on_a_stick",
     "components": {
+      "minecraft:custom_data": "{fire_drill:1}",
       "minecraft:custom_name": {
-        "text": "Water skin",
+        "text": "Fire drill",
+        "color": "white",
         "italic": false
       },
-      "minecraft:custom_data": "{water_skin:1}"
+      "minecraft:item_model": "minecraft:bow"
     }
   }
 }

@@ -6,6 +6,8 @@ execute store result storage primitive:drop_tree burn_time int 1 run scoreboard 
 
 function primitive:tree/drop_tree with storage primitive:drop_tree
 
+data remove storage primitive:drop_tree size
+data remove storage primitive:drop_tree burn_time
 
 function primitive:tree/destroy_iteration
 

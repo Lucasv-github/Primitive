@@ -19,6 +19,9 @@ execute if predicate {condition:"entity_properties",entity:"this",predicate:{typ
 execute if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{backward:true}}}} run function primitive:moved
 execute if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{right:true}}}} run function primitive:moved
 
+#Placed item data
+execute store result score @s reg_1 run data get entity @s SelectedItemSlot
+execute unless score @s reg_1 = @s selected_item_slot run function primitive:player/changed_slot
 
 #Allowing block breaks
 tag @s remove looking_water
@@ -26,8 +29,12 @@ tag @s remove looking_pot
 execute at @s[gamemode=!creative,gamemode=!spectator] anchored eyes positioned ^ ^ ^ anchored feet run function primitive:look_ray
 
 
-#Waterskin
+#Waterskin use
 execute as @s[scores={click_detect=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{waterskin:1}}}}] run function primitive:waterskin/click
+
+#Fire drill use
+execute as @s[scores={click_detect=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{fire_drill:1}}}}] run function primitive:fire/drill_use
+
 
 scoreboard players set @s sneak_detect 0
 scoreboard players set @s click_detect 0
