@@ -1,5 +1,5 @@
 {
-	"parent": "item/generated",
+	"parent": "item/handheld",
 	"textures": {
 		"layer0": "primitive_pack:item/burning_stick"
 	}

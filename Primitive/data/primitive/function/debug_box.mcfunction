@@ -1,0 +1,2 @@
+#spawns the box
+setblock ^ ^1 ^1 shulker_box{Items:[{Slot:0b,id:"minecraft:stick",count:64,components:{"minecraft:item_model":"primitive_pack:birch_bark","minecraft:custom_data":{bark:3,burn_time:5,easy_burn:1},"minecraft:custom_name":{"italic":false,"text":"Birch bark"}}},{Slot:1b,id:"minecraft:flint",count:64},{Slot:2b,id:"minecraft:string",count:64},{Slot:3b,id:"minecraft:leather",count:64},{Slot:4b,id:"minecraft:stick",count:64}],CustomName:{"italic":false,"text":"Debug Box"}} replace

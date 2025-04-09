@@ -1,0 +1,2 @@
+#literally just executes the create fire function without the need for flint
+execute at @s as @e[type=minecraft:item,limit=1,distance=..5,nbt={Item:{id:"minecraft:stick",components:{"minecraft:custom_data":{bark:3}}}}] run function primitive:fire/create

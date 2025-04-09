@@ -1,6 +1,8 @@
 execute as @e[type=minecraft:item] run function primitive:item_handle
 execute as @a run function primitive:player_handle
 
+execute as @a[nbt={Air:300s}] run function primitive:display_bar
+
 execute as @e[type=minecraft:armor_stand,tag=created_fire] run function primitive:fire/tick
 
 execute as @e[type=minecraft:cow,tag=!modified_cow] run function primitive:modify/cow
