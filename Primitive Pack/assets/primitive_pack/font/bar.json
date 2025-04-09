@@ -28,6 +28,33 @@
 		]
 	},
 	{
+		"type":"bitmap",
+		"file":"primitive_pack:bar/thirst_empty.png",
+		"ascent":-5,
+		"height":9,
+		"chars":[
+		"\uE003"
+		]
+	},
+	{
+		"type":"bitmap",
+		"file":"primitive_pack:bar/thirst_half.png",
+		"ascent":-5,
+		"height":9,
+		"chars":[
+		"\uE004"
+		]
+	},
+	{
+		"type":"bitmap",
+		"file":"primitive_pack:bar/thirst_full.png",
+		"ascent":-5,
+		"height":9,
+		"chars":[
+		"\uE005"
+		]
+	},
+	{
 		"type":"space",
 		"advances":{
 			"\uF001":98,
