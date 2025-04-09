@@ -1,6 +1,9 @@
 #Joined before
 execute as @s[tag=!joined_before] run function primitive:events/first_join
 
+#Display thirst bar
+execute as @a[nbt={Air:300s}] run function primitive:player/display_bar
+
 #Death
 execute as @s[scores={death_detect=1..}] run function primitive:events/death
 
