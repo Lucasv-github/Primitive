@@ -32,21 +32,6 @@ execute as @s[nbt={Item:{id:"minecraft:mangrove_leaves"}}] unless data entity @s
 execute as @s[nbt={Item:{id:"minecraft:cherry_leaves"}}] unless data entity @s Item.components.minecraft:custom_data.processed run function primitive:broken/leaves/cherry
 execute as @s[nbt={Item:{id:"minecraft:pale_oak_leaves"}}] unless data entity @s Item.components.minecraft:custom_data.processed run function primitive:broken/leaves/pale_oak
 
-#Cooking (TODO move to fire tick)
-execute as @s[nbt={Item:{id:"minecraft:beef",count:1}}] at @s if entity @e[distance=..1.5,tag=created_fire] run scoreboard players add @s cook_time 1
-execute as @s[nbt={Item:{id:"minecraft:porkchop",count:1}}] at @s if entity @e[distance=..1.5,tag=created_fire] run scoreboard players add @s cook_time 1
-execute as @s[nbt={Item:{id:"minecraft:mutton",count:1}}] at @s if entity @e[distance=..1.5,tag=created_fire] run scoreboard players add @s cook_time 1
-execute as @s[nbt={Item:{id:"minecraft:chicken",count:1}}] at @s if entity @e[distance=..1.5,tag=created_fire] run scoreboard players add @s cook_time 1
-execute as @s[nbt={Item:{id:"minecraft:rabbit",count:1}}] at @s if entity @e[distance=..1.5,tag=created_fire] run scoreboard players add @s cook_time 1
-execute as @s[nbt={Item:{id:"minecraft:salmon",count:1}}] at @s if entity @e[distance=..1.5,tag=created_fire] run scoreboard players add @s cook_time 1
-execute as @s[nbt={Item:{id:"minecraft:cod",count:1}}] at @s if entity @e[distance=..1.5,tag=created_fire] run scoreboard players add @s cook_time 1
-execute as @s[nbt={Item:{id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_data":{cured_pot:1}}}}] at @s if entity @e[distance=..1.5,tag=created_fire] run scoreboard players add @s cook_time 1
-
-execute as @s[nbt={Item:{id:"minecraft:stick",count:1}}] at @s if entity @e[distance=..1.5,tag=created_fire] run scoreboard players add @s cook_time 1
-
-execute as @s[scores={cook_time=400..}] run function primitive:fire/cooked
-
-
 execute as @s[tag=!pot_broken,nbt={Item:{id:"minecraft:decorated_pot"}}] run function primitive:pot/broken
 
 execute as @s[nbt={Item:{id:"minecraft:wheat_seeds"}}] run function primitive:modify/wheat_seeds

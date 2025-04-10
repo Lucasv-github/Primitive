@@ -44,6 +44,11 @@ scoreboard players set 2 reg_1 2
 scoreboard players set 3 reg_1 3
 scoreboard players set 4 reg_1 4
 scoreboard players set 5 reg_1 5
+scoreboard players set 6 reg_1 6
+scoreboard players set 7 reg_1 7
+scoreboard players set 8 reg_1 8
+scoreboard players set 9 reg_1 9
+scoreboard players set 10 reg_1 10
 scoreboard players set 20 reg_1 20
 scoreboard players set 60 reg_1 60
 scoreboard players set 80 reg_1 80
