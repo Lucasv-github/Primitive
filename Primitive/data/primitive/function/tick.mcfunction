@@ -9,6 +9,7 @@ execute as @e[type=minecraft:sheep,tag=!modified_sheep] run function primitive:m
 
 execute as @e[type=minecraft:armor_stand,tag=placed_clay_blob] run function primitive:pot/place_blob
 execute as @e[type=minecraft:armor_stand,tag=placed_fired_pot] run function primitive:pot/place
+execute as @e[type=minecraft:armor_stand,tag=placed_burning_stick] run function primitive:burning_stick/place
 
 execute as @e[type=minecraft:interaction,tag=clay_blob_interaction] if data entity @s attack run function primitive:pot/clay_punch
 execute as @e[type=minecraft:interaction,tag=shaping] at @s unless entity @a[distance=..1] run data merge entity @s {width:0.1,height:0.1,Tags:["clay_blob_interaction"]}
