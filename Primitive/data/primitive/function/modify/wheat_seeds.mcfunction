@@ -1,2 +1,1 @@
-execute at @s run summon item ~ ~1 ~ {Item:{id:string,count:1,components:{}}}
-kill @s
+data merge entity @s {Item:{id:string,components:{custom_name:["",{"text":"String","italic":false}],attribute_modifiers:[{type:block_interaction_range,amount:-1,operation:add_multiplied_base,id:"1743267054865"}],tooltip_display:{hidden_components:[attribute_modifiers]}}}}

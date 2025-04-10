@@ -49,7 +49,7 @@ execute as @s[scores={cook_time=400..}] run function primitive:fire/cooked
 
 execute as @s[tag=!pot_broken,nbt={Item:{id:"minecraft:decorated_pot"}}] run function primitive:pot/broken
 
-execute as @s[nbt={Item:{id:"minecraft:wheat_seeds"}}] run function primitive:broken/wheat_seeds
+execute as @s[nbt={Item:{id:"minecraft:wheat_seeds"}}] run function primitive:modify/wheat_seeds
 execute as @s[nbt={Item:{id:"minecraft:flint"}}] unless data entity @s Item.components.minecraft:custom_data.modified_flint run function primitive:modify/flint
 
 execute as @e[nbt={Item:{id:"minecraft:clay_ball"}}] unless data entity @s Item.components.minecraft:custom_data.clay run function primitive:broken/clay
