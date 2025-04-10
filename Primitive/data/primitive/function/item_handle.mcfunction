@@ -57,6 +57,8 @@ execute as @s[nbt={Item:{id:"minecraft:clay"}}] run function primitive:broken/cl
 
 execute as @s[nbt={Item:{id:"minecraft:sand"}}] run function primitive:broken/sand
 execute as @s[nbt={Item:{id:"minecraft:stone"}}] run function primitive:broken/stone
+execute as @s[nbt={Item:{id:"minecraft:coal_ore"}}] run function primitive:broken/coal_ore
+execute as @s[nbt={Item:{id:"minecraft:copper_ore"}}] run function primitive:broken/copper_ore
 execute as @s[nbt={Item:{id:"minecraft:gravel"}}] run function primitive:broken/gravel
 execute as @s[nbt={Item:{id:"minecraft:dirt"}}] run function primitive:broken/dirt
 execute as @s[nbt={Item:{id:"minecraft:grass_block"}}] run function primitive:broken/grass_block

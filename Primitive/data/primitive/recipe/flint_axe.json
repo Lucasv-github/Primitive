@@ -36,7 +36,7 @@
       "minecraft:tool": {
         "rules": [
           {
-            "blocks": "stone",
+            "blocks": "#primitive:flint_axe_break_minerals",
             "speed": 0.5,
             "correct_for_drops": true
           }
