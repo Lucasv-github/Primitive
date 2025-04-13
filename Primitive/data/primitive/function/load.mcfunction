@@ -17,7 +17,9 @@ scoreboard objectives add click_detect minecraft.used:minecraft.carrot_on_a_stic
 
 scoreboard objectives add raw_water_poisoning dummy
 
-scoreboard objectives add pot_cure_counter dummy
+scoreboard objectives add clay_form_counter dummy
+scoreboard objectives add clay_cure_counter dummy
+
 scoreboard objectives add pot_water_amount dummy
 scoreboard objectives add pot_salt_amount dummy
 scoreboard objectives add pot_cook_time dummy

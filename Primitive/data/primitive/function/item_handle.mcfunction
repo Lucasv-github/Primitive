@@ -40,6 +40,8 @@ execute as @s[nbt={Item:{id:"minecraft:flint"}}] unless data entity @s Item.comp
 execute as @e[nbt={Item:{id:"minecraft:clay_ball"}}] unless data entity @s Item.components.minecraft:custom_data.clay run function primitive:broken/clay
 execute as @s[nbt={Item:{id:"minecraft:clay"}}] run function primitive:broken/clay
 
+execute as @s[nbt={Item:{id:"minecraft:player_head"}}] run function primitive:brick/broken
+
 execute as @s[nbt={Item:{id:"minecraft:sand"}}] run function primitive:broken/sand
 execute as @s[nbt={Item:{id:"minecraft:stone"}}] run function primitive:broken/stone
 execute as @s[nbt={Item:{id:"minecraft:coal_ore"}}] run function primitive:broken/coal_ore
@@ -53,6 +55,7 @@ execute as @s[nbt={Item:{id:"minecraft:brown_dye",count:64,components:{"minecraf
 execute as @s[nbt={Item:{id:"minecraft:yellow_dye",count:64,components:{"minecraft:custom_data":{sand:1}}}}] run function primitive:place/sand
 execute as @s[nbt={Item:{id:"minecraft:gray_dye",count:64,components:{"minecraft:custom_data":{gravel:1}}}}] run function primitive:place/gravel
 execute as @s[nbt={Item:{id:"minecraft:clay_ball",count:64,components:{"minecraft:custom_data":{clay:1}}}}] run function primitive:place/clay
+execute as @s[nbt={Item:{id:"minecraft:brick",count:10,components:{"minecraft:custom_data":{fired_brick:1}}}}] run function primitive:place/bricks
 
 #Hot item start fire
 execute as @s[nbt={Item:{components:{"minecraft:custom_data":{hot:1}}}}] at @s as @e[type=minecraft:item,distance=..1,nbt={Item:{components:{"minecraft:custom_data":{easy_burn:1}}}}] run function primitive:fire/relight

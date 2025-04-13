@@ -1,0 +1,2 @@
+execute at @s run kill @e[limit=1,sort=nearest,type=minecraft:interaction,tag=clay_blob_interaction,distance=..1]
+execute at @s run kill @e[limit=1,sort=nearest,type=minecraft:armor_stand,tag=break_counter,distance=..1]

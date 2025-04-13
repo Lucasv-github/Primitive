@@ -9,6 +9,9 @@ execute as @a if items entity @s hotbar.* *[minecraft:custom_data~{hot:1}] run d
 #Hot item second
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{hot:1}}}}] run function primitive:temperature/hot_item_second
 
+#Clay feaure second
+execute as @e[tag=clay_feature] run function primitive:clay/second
+
 #Pot second
 execute as @e[tag=pot] run function primitive:pot/second
 
