@@ -55,7 +55,7 @@ execute as @s[nbt={Item:{id:"minecraft:brown_dye",count:64,components:{"minecraf
 execute as @s[nbt={Item:{id:"minecraft:yellow_dye",count:64,components:{"minecraft:custom_data":{sand:1}}}}] run function primitive:place/sand
 execute as @s[nbt={Item:{id:"minecraft:gray_dye",count:64,components:{"minecraft:custom_data":{gravel:1}}}}] run function primitive:place/gravel
 execute as @s[nbt={Item:{id:"minecraft:clay_ball",count:64,components:{"minecraft:custom_data":{clay:1}}}}] run function primitive:place/clay
-execute as @s[nbt={Item:{id:"minecraft:brick",count:10,components:{"minecraft:custom_data":{fired_brick:1}}}}] run function primitive:place/bricks
+execute as @s[tag=!brick_blocked,nbt={Item:{id:"minecraft:brick",components:{"minecraft:custom_data":{fired_brick:1}}}}] run function primitive:place/bricks
 
 #Hot item start fire
 execute as @s[nbt={Item:{components:{"minecraft:custom_data":{hot:1}}}}] at @s as @e[type=minecraft:item,distance=..1,nbt={Item:{components:{"minecraft:custom_data":{easy_burn:1}}}}] run function primitive:fire/relight
