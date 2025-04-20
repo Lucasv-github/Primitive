@@ -16,7 +16,7 @@ item modify entity @s weapon.offhand primitive:copy_custom_data
 
 data remove storage primitive:item_custom_data pot_water_amount
 
-item replace entity @s weapon.mainhand with minecraft:carrot_on_a_stick[minecraft:item_model="primitive_pack:waterskin_full",minecraft:custom_data={waterskin:1,filled:1}]
+item replace entity @s weapon.mainhand with minecraft:carrot_on_a_stick[minecraft:item_model="primitive_pack:waterskin_full",minecraft:custom_data={waterskin:1,filled:1},minecraft:custom_name=["",{"text":"Filled waterskin","italic":false}]]
 
 #Raw
 execute as @s[nbt={equipment:{offhand:{components:{"minecraft:custom_data":{raw_water:1}}}}}] run data merge storage primitive:item_custom_data {raw_water:1}
