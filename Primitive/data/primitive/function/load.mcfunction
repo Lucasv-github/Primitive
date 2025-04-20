@@ -62,6 +62,7 @@ scoreboard players set 1000 reg_1 1000
 scoreboard players set 1600 reg_1 1600
 
 scoreboard objectives setdisplay list player_id
+scoreboard objectives add primitive_info dummy
 
 #Settings
 difficulty hard

@@ -1,3 +1,5 @@
+function primitive:debug/second
+
 #Rain sensitive
 execute as @e[tag=rain_sensitive_second] at @s positioned ~ ~1 ~ if predicate primitive:rain_hits run function primitive:events/rained_on_second
 
