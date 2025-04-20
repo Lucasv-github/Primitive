@@ -26,8 +26,6 @@ scoreboard objectives add pot_cook_time dummy
 
 scoreboard objectives add hot_item_time dummy
 
-scoreboard objectives add burning_stick_time dummy
-
 scoreboard objectives add fire_counter dummy
 scoreboard objectives add fire_time dummy
 scoreboard objectives add total_fire_time dummy
