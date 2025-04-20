@@ -10,7 +10,7 @@ scoreboard players operation Total_items primitive_info = Temp reg_1
 
 #Total armorstands
 scoreboard players set Temp reg_1 0
-execute as @e[type=minecraft:item] run scoreboard players add Temp reg_1 1
+execute as @e[type=minecraft:armor_stand] run scoreboard players add Temp reg_1 1
 scoreboard players operation Total_armorstands primitive_info = Temp reg_1
 
 #Total interactions
