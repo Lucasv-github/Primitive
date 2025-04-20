@@ -1,6 +1,6 @@
 #TODO some contents might require something special
 
-summon item ~ ~ ~ {Tags:["pot_broken"],Item:{id:bat_spawn_egg,count:1,components:{entity_data:{id:armor_stand,ShowArms:1b,Invisible:1b,Marker:1b,Invulnerable:1b,Silent:1b,Tags:[placed_fired_pot]},item_model:"minecraft:decorated_pot",item_model:"minecraft:decorated_pot",custom_name:["",{"text":"Fired pot","italic":false}],custom_data:{fired_pot:1}}}}
+summon item ~ ~ ~ {Tags:["pot_broken"],Item:{id:bat_spawn_egg,count:1,components:{entity_data:{id:armor_stand,ShowArms:1b,Invisible:1b,Marker:1b,Invulnerable:1b,Silent:1b,Tags:[placed_fired_pot]},max_stack_size:1,item_model:"minecraft:decorated_pot",item_model:"minecraft:decorated_pot",custom_name:["",{"text":"Fired pot","italic":false}],custom_data:{fired_pot:1}}}}
 
 execute at @s if entity @e[limit=1,sort=nearest,type=minecraft:armor_stand,tag=fired_pot,distance=..1,tag=boiled_water] run data modify entity @e[limit=1,sort=nearest,type=minecraft:item,tag=pot_broken] Item.components.minecraft:custom_data merge value {boiled_water:1}
 execute at @s if entity @e[limit=1,sort=nearest,type=minecraft:armor_stand,tag=fired_pot,distance=..1,tag=raw_water] run data modify entity @e[limit=1,sort=nearest,type=minecraft:item,tag=pot_broken] Item.components.minecraft:custom_data merge value {raw_water:1}
