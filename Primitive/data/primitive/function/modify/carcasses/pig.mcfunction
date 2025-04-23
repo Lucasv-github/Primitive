@@ -1,0 +1,1 @@
+data merge entity @s {Item:{id:"minecraft:bat_spawn_egg",components:{"minecraft:custom_data":{unmodified_carcass:0},"minecraft:custom_name":[{"text":"Pig carcass","italic":false}],"minecraft:entity_data":{id:armor_stand,ShowArms:1b,Invisible:1b,Marker:1b,Invulnerable:1b,NoGravity:1b,Silent:1b,Tags:[placed_pig_carcass]}}}}
