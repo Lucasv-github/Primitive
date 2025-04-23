@@ -10,6 +10,6 @@ scoreboard players operation @s pot_water_amount += Temp reg_1
 execute if score @s pot_water_amount matches 20001.. run say TODO this needs clamping
 
 scoreboard players operation @s reg_1 = Temp reg_1
-scoreboard players operation @s reg_1 /= 80 reg_1
+scoreboard players operation @s reg_1 /= 100 reg_1
 
 scoreboard players operation @s pot_cook_time += @s reg_1
