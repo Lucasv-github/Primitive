@@ -25,7 +25,7 @@ execute if predicate {condition:"entity_properties",entity:"this",predicate:{typ
 
 #Placed item data
 execute store result score @s reg_1 run data get entity @s SelectedItemSlot
-execute unless score @s reg_1 = @s selected_item_slot run function primitive:player/changed_slot
+execute unless score @s reg_1 = @s selected_item_slot run function primitive:events/slot_changed
 
 #Allowing block breaks
 tag @s remove looking_water

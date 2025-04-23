@@ -1,0 +1,14 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [],
+        "": ""
+      }
+    }
+  },
+  "rewards": {
+    "function": "primitive:events/inventory_changed"
+  }
+}

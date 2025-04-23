@@ -1,0 +1,1 @@
+function primitive:held/save_data with entity @s SelectedItem
