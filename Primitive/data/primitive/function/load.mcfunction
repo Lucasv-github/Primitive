@@ -29,8 +29,14 @@ scoreboard objectives add hot_item_time dummy
 scoreboard objectives add fire_counter dummy
 scoreboard objectives add fire_time dummy
 scoreboard objectives add total_fire_time dummy
+
 scoreboard objectives add item_count dummy
+
 scoreboard objectives add cook_time dummy
+scoreboard objectives add cook_time_done dummy
+scoreboard objectives add cook_item_count dummy
+scoreboard objectives add cook_item_count_new dummy
+
 scoreboard objectives add break_counter dummy
 
 scoreboard objectives add tree_count dummy
@@ -56,6 +62,7 @@ scoreboard players set 60 reg_1 60
 scoreboard players set 80 reg_1 80
 scoreboard players set 100 reg_1 100
 scoreboard players set 200 reg_1 200
+scoreboard players set 500 reg_1 500
 scoreboard players set 1000 reg_1 1000
 scoreboard players set 1600 reg_1 1600
 

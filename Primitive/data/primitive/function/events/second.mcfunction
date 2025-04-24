@@ -21,12 +21,6 @@ execute as @e[tag=pot] run function primitive:pot/second
 scoreboard players remove @a[scores={raw_water_poisoning=1..}] raw_water_poisoning 1
 effect give @a[scores={raw_water_poisoning=0}] minecraft:poison 10
 
-#Fires
-execute as @e[type=minecraft:armor_stand,tag=created_fire] run function primitive:fire/second
-
-#Burning sticks
-execute as @e[tag=burning_stick] run function primitive:burning_stick/second
-
 #Even driver
 scoreboard players operation Temp reg_1 = Temp second_counter
 scoreboard players operation Temp reg_1 %= 5 reg_1

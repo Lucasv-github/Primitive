@@ -1,6 +1,9 @@
 execute as @e[type=minecraft:item] run function primitive:item_handle
 execute as @a run function primitive:player_handle
 
+execute as @e[type=minecraft:armor_stand,tag=created_fire] run function primitive:fire/tick
+execute as @e[type=minecraft:armor_stand,tag=burning_stick] run function primitive:burning_stick/tick
+
 execute as @e[type=minecraft:cow,tag=!modified_cow] run function primitive:modify/cow
 execute as @e[type=minecraft:pig,tag=!modified_pig] run function primitive:modify/pig
 execute as @e[type=minecraft:sheep,tag=!modified_sheep] run function primitive:modify/sheep
