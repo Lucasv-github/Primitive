@@ -6,6 +6,10 @@ scoreboard objectives add reg_4 dummy
 scoreboard objectives add player_id dummy
 scoreboard objectives add selected_item_slot dummy
 
+scoreboard objectives add player_activity dummy
+
+scoreboard objectives add temperature dummy
+
 scoreboard objectives add tick_counter dummy
 scoreboard objectives add second_counter dummy
 

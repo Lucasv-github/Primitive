@@ -5,6 +5,10 @@ execute as @s[tag=!joined_before] run function primitive:events/first_join
 execute as @s[nbt={Air:300s},gamemode=!creative,gamemode=!spectator] run function primitive:player/display_bar
 execute as @s[nbt=!{Air:300s},gamemode=!creative,gamemode=!spectator] run function primitive:player/display_bar_underwater
 
+scoreboard players set @s player_activity 0
+
+execute if predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"type_specific":{"type":"minecraft:player","input":{"jump":true}}}} run scoreboard players add @s player_activity 30
+
 #Death
 execute as @s[scores={death_detect=1..}] run function primitive:events/death
 
@@ -18,10 +22,14 @@ tag @s[tag=flint_offhand,nbt=!{equipment:{offhand:{id:"minecraft:flint",count:2}
 
 scoreboard players remove @a[scores={fire_counter=1..}] fire_counter 1
 
-execute if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{forward:true}}}} run function primitive:moved
-execute if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{left:true}}}} run function primitive:moved
-execute if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{backward:true}}}} run function primitive:moved
-execute if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{right:true}}}} run function primitive:moved
+scoreboard players set Temp reg_1 0
+
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{forward:true}}}} run scoreboard players set Temp reg_1 1
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{left:true}}}} run scoreboard players set Temp reg_1 1
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{backward:true}}}} run scoreboard players set Temp reg_1 1
+execute if predicate {condition:"entity_properties",entity:"this",predicate:{type_specific:{type:"player",input:{right:true}}}} run scoreboard players set Temp reg_1 1
+
+execute if score Temp reg_1 matches 1 run function primitive:moved
 
 #Placed item data
 execute store result score @s reg_1 run data get entity @s SelectedItemSlot
@@ -38,7 +46,6 @@ execute as @s[scores={click_detect=1..},nbt={SelectedItem:{id:"minecraft:carrot_
 
 #Fire drill use
 execute as @s[scores={click_detect=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{fire_drill:1}}}}] run function primitive:fire/drill_use
-
 
 scoreboard players set @s sneak_detect 0
 scoreboard players set @s click_detect 0
